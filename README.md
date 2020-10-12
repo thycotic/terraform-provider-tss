@@ -7,7 +7,7 @@ The [Thycotic](https://thycotic.com/)
 ## Installation
 
 Terraform has [installation instructions](https://www.terraform.io/docs/plugins/basics.html#installing-plugins).
-The binaries can be downloaded [here]().
+The latest release can be downloaded from [here](https://github.com/thycotic/terraform-provider-tss/releases/latest).
 
 ## Usage
 
