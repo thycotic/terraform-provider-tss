@@ -1,3 +1,12 @@
+terraform {
+  required_providers {
+    tss = {
+      source  = "terraform.thycotic.com/thycotic/tss"
+      version = "~> 1.0"
+    }
+  }
+}
+
 variable "tss_username" {
   type = string
 }
