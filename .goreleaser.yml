@@ -47,10 +47,10 @@ signs:
       - "${signature}"
       - "--detach-sign"
       - "${artifact}"
-source:
-  enabled: true
 release:
   # If you want to manually examine the release before its live, uncomment this line:
-  draft: false
+  # draft: false
 changelog:
   skip: true
+  source:
+  enabled: true
