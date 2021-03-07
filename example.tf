@@ -28,6 +28,10 @@ provider "tss" {
   username   = var.tss_username
   password   = var.tss_password
   server_url = var.tss_server_url
+
+  # (Optional) Disables TLS certificate validation (defaults to false). 
+  # insecure  = true
+
 }
 
 data "tss_secret" "my_username" {
