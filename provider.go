@@ -12,6 +12,7 @@ func providerConfig(d *schema.ResourceData) (interface{}, error) {
 			Username: d.Get("username").(string),
 			Password: d.Get("password").(string),
 		},
+		InsecureTLS: d.Get("insecure").(bool),
 	}, nil
 }
 
@@ -36,6 +37,12 @@ func Provider() *schema.Provider {
 				Type:        schema.TypeString,
 				Required:    true,
 				Description: "The password of the Secret Server User",
+			},
+			"insecure": {
+				Type:        schema.TypeBool,
+				Optional:    true,
+				Default:     false,
+				Description: "Disable validation of TLS certificates",
 			},
 		},
 		ConfigureFunc: providerConfig,
